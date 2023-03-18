@@ -6,13 +6,13 @@ const Notifications=()=>{
     const [notifications,setnotifications]=useState([])
     useEffect(()=>{
         const name=localStorage.getItem("name")
-        fetch(`http://localhost:5000/notifications/${name}`).then(res=>res.json()).then(data=>{
+        fetch(`https://carsharing-p2uk.onrender.com/notifications/${name}`).then(res=>res.json()).then(data=>{
             setnotifications(data.reverse())
         })
     },[])
     function displaynotification(item){
         return(
-            <div className="Notification">
+            <div className="Notification" key={item._id}>
                 <h3 className="notification-content">{item.message}</h3>
                 <p className="notification-content">{item.time}</p>
             </div>

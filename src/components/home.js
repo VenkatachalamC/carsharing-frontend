@@ -10,15 +10,13 @@ const Home=()=>{
     const [result,setresult]=useState([])
     const name=localStorage.getItem("name")
     useEffect(()=>{
-        console.log(name)
-        fetch(`http://localhost:5000/bookings/${name}`).then(res=>res.json())
+        fetch(`https://carsharing-p2uk.onrender.com/bookings/${name}`).then(res=>res.json())
         .then(data=>{
             setbookings(data.reverse())
-            console.log(data)
         })
     },[result,name])
     function cancelBooking(bookingData){
-     fetch("http://localhost:5000/cancel",{
+     fetch("https://carsharing-p2uk.onrender.com/cancel",{
         method:"delete",
         headers:{
             "Content-Type":"application/json"
@@ -45,14 +43,14 @@ const Home=()=>{
             carmodel:item.carModel
         }
         return(
-            <div className="item-container">
+            <div className="item-container" key={item._id}>
             {img}
             <button className="cancel-btn" onClick={()=>cancelBooking(data)}>cancel</button>
             <h5>Owner : {item.carowner}</h5>
             <h5>CarModel : {item.carModel}</h5>
             <h5>CarType : {item.cartype}</h5>
             <h5>Charge : {item.charge} Rs/day</h5>
-            <h7>Booked on : {item.bookingDate}</h7>
+            <h6>Booked on : {item.bookingDate}</h6>
             </div>
         )
     }

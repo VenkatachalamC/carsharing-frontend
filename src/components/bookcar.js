@@ -11,13 +11,13 @@ const BookCar=()=>{
     const navigate=useNavigate()
     const name=localStorage.getItem("name")
     useEffect(()=>{
-        fetch(`http://localhost:5000/cars/${name}`).then(res=>res.json()).then(data=>{
+        fetch(`https://carsharing-p2uk.onrender.com/cars/${name}`).then(res=>res.json()).then(data=>{
             setcars(data.reverse())
         })
     },[name])
     //need to change acc to api.
     const Book=(carData)=>{
-        fetch("http://localhost:5000/book",{
+        fetch("https://carsharing-p2uk.onrender.com/book",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
@@ -47,7 +47,7 @@ const BookCar=()=>{
             carmodel:item.carModel
         }
         return (
-        <div className="item-container">
+        <div className="item-container"  key={item._id}>
             {img}
         <button className="book-btn"
         onClick={()=>Book(data)}>Book</button>

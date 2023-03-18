@@ -10,7 +10,7 @@ const SignUp=()=>{
 
     function SignUpHandle(){
         if(password===confirmpass){
-            fetch("http://localhost:5000/signUp",{
+            fetch("https://carsharing-p2uk.onrender.com/signUp",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"

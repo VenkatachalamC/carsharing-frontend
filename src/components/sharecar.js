@@ -19,7 +19,7 @@ const ShareCar=()=>{
         }
     },[Type])
     function share(){
-        fetch("http://localhost:5000/share",{
+        fetch("https://carsharing-p2uk.onrender.com/share",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
