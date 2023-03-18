@@ -1,0 +1,29 @@
+.notification-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+}
+
+.Notification{
+    background-color: rgba(45, 44, 44);
+    margin: 10px;
+    box-shadow:10px 10px 5px lightblue;
+    border-width: 10px;
+    border-color: rgba(45, 44, 44);
+    border-radius: 5px;
+    padding: 20px;
+    font-family: "Helvetica Neue", "Arial", sans-serif;
+    align-items: center;
+    justify-content: center;
+    width:80%;
+}
+
+.divider{
+    margin: 50px;
+}
+
+.notification-content{
+    color: whitesmoke;
+}

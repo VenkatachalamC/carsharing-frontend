@@ -1,0 +1,43 @@
+.card-signin{
+    background-color:rgb(45, 44, 44);
+    text-align: center;
+    padding:10px;
+    display:flex;
+    align-items: center; 
+    padding: 100px; 
+    flex-direction: column;
+    margin: 40px;
+}
+.input-signin{
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 8px 8px 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.button-signin{
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 8px 8px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.txt-signin{
+    align-items: center;
+    width:100%;
+    color: whitesmoke;
+}
+
+.signin-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.errormsg{
+    color:red;
+}

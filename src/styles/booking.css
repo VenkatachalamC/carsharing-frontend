@@ -1,0 +1,52 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-container{
+    margin: 10px;
+    padding:10px;
+    background-color:rgba(45, 44, 44);
+    border-radius: 1%;
+    box-shadow: 10px 10px 5px lightblue;
+    width:500px;
+    align-items: center;
+    justify-content: center;
+    color:whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.icon{
+    float: left;
+    height: 200px;
+    width:200px;
+    margin: 20px;
+}
+.title{
+    margin-top: 5%;
+    margin-left: 2%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: midnightblue;
+    font-size: xx-large;
+    
+}
+
+.book-btn{
+    float: right;
+    margin: 10px;
+    background-color:#ff9933;
+    border-width: 0px;
+    color:midnightblue;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.booking-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

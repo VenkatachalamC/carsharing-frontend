@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-container{
+    margin: 10px;
+    padding:10px;
+    background-color:rgb(45, 44, 44);
+    border-radius: 1%;
+    box-shadow: 10px 10px 5px lightblue;
+    width:85%;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon{
+    float: left;
+    height: 200px;
+    width:200px;
+    margin: 20px;
+}
+
+.cancel-btn{
+    float: right;
+    margin: 20px;
+    background-color:#ff9933;
+    border-width: 0px;
+    color:midnightblue;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.home-divider{
+    margin: 10px;
+}
